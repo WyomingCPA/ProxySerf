@@ -40,6 +40,7 @@ namespace ProxySerf.ViewModel
 
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<ProxyServersViewModel>();
+            SimpleIoc.Default.Register<LogViewModel>();
         }
 
         /// <summary>
@@ -56,7 +57,7 @@ namespace ProxySerf.ViewModel
             }
         }
         /// <summary>
-        /// Gets the Main property.
+        /// Gets the ProxyServer property.
         /// </summary>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance",
             "CA1822:MarkMembersAsStatic",
@@ -66,6 +67,20 @@ namespace ProxySerf.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<ProxyServersViewModel>();
+            }
+        }
+
+        /// <summary>
+        /// Gets the Log property.
+        /// </summary>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance",
+            "CA1822:MarkMembersAsStatic",
+            Justification = "This non-static member is needed for data binding purposes.")]
+        public LogViewModel Log
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<LogViewModel>();
             }
         }
 

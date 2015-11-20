@@ -87,9 +87,13 @@
     <Compile Include="Model\IProxyServerService.cs" />
     <Compile Include="Model\ProxyServerItem.cs" />
     <Compile Include="Model\ProxyServerService.cs" />
+    <Compile Include="Skins\LogView.xaml.cs">
+      <DependentUpon>LogView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Skins\ProxyServersView.xaml.cs">
       <DependentUpon>ProxyServersView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\LogViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ProxyServersViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
@@ -105,6 +109,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Skins\LogView.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Skins\ProxyServersView.xaml">
       <SubType>Form</SubType>
       <Generator>MSBuild:Compile</Generator>
