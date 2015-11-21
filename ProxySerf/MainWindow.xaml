@@ -23,7 +23,7 @@
                 <Skins:ProxyServersView  Height="Auto" Width="Auto"/>
             </TabItem>
             <TabItem Header="Log">
-                <Skins:ProxyServersView  Height="Auto" Width="Auto"/>
+                <Skins:LogView  Height="Auto" Width="Auto"/>
             </TabItem>
         </TabControl>
     </Grid>
