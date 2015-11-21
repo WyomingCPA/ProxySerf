@@ -22,6 +22,9 @@
             <TabItem Header="Proxy Servers">
                 <Skins:ProxyServersView  Height="Auto" Width="Auto"/>
             </TabItem>
+            <TabItem Header="Proxy Sources">
+                <Skins:ProxySourcesView  Height="Auto" Width="Auto"/>
+            </TabItem>
             <TabItem Header="Log">
                 <Skins:LogView  Height="Auto" Width="Auto"/>
             </TabItem>

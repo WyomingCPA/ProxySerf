@@ -14,6 +14,7 @@ using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 using ProxySerf.Model;
 
+
 namespace ProxySerf.ViewModel
 {
     /// <summary>
@@ -41,6 +42,7 @@ namespace ProxySerf.ViewModel
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<ProxyServersViewModel>();
             SimpleIoc.Default.Register<LogViewModel>();
+            SimpleIoc.Default.Register<ProxySourceViewModel>();
         }
 
         /// <summary>
@@ -67,6 +69,20 @@ namespace ProxySerf.ViewModel
             get
             {
                 return ServiceLocator.Current.GetInstance<ProxyServersViewModel>();
+            }
+        }
+
+        /// <summary>
+        /// Gets the ProxySource property.
+        /// </summary>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance",
+            "CA1822:MarkMembersAsStatic",
+            Justification = "This non-static member is needed for data binding purposes.")]
+        public ProxySourceViewModel ProxySource
+        {
+            get
+            {
+                return ServiceLocator.Current.GetInstance<ProxySourceViewModel>();
             }
         }
 

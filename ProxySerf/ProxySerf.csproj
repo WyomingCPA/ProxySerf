@@ -81,11 +81,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Design\DesignDataService.cs" />
+    <Compile Include="Log\Log.cs" />
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
     <Compile Include="Model\IDataService.cs" />
     <Compile Include="Model\IProxyServerService.cs" />
-    <Compile Include="Model\LogItem.cs" />
+    <Compile Include="Log\LogMisc.cs" />
     <Compile Include="Model\ProxyServerItem.cs" />
     <Compile Include="Model\ProxyServerService.cs" />
     <Compile Include="Skins\LogView.xaml.cs">
@@ -94,9 +95,13 @@
     <Compile Include="Skins\ProxyServersView.xaml.cs">
       <DependentUpon>ProxyServersView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Skins\ProxySourcesView.xaml.cs">
+      <DependentUpon>ProxySourcesView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\LogViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ProxyServersViewModel.cs" />
+    <Compile Include="ViewModel\ProxySourceViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -115,6 +120,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Skins\ProxyServersView.xaml">
+      <SubType>Form</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Skins\ProxySourcesView.xaml">
       <SubType>Form</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
