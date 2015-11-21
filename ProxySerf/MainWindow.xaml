@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ignore="http://www.galasoft.ch/ignore"
         mc:Ignorable="d ignore"
-        Height="300"
-        Width="300"
+        Height="473.135"
+        Width="780.597"
         Title="ProxySerf v 0.1"
         DataContext="{Binding Main, Source={StaticResource Locator}}">
 
@@ -18,7 +18,7 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid x:Name="LayoutRoot">
-        <TabControl HorizontalAlignment="Left" Height="217" Margin="10,43,0,0" VerticalAlignment="Top" Width="272">
+        <TabControl HorizontalAlignment="Left" Height="390" Margin="10,43,0,0" VerticalAlignment="Top" Width="753">
             <TabItem Header="Proxy Servers">
                 <Skins:ProxyServersView  Height="Auto" Width="Auto"/>
             </TabItem>
@@ -29,5 +29,6 @@
                 <Skins:LogView  Height="Auto" Width="Auto"/>
             </TabItem>
         </TabControl>
+        <Button Command="{Binding Start}" Content="Start" HorizontalAlignment="Left" Margin="459,27,0,0" VerticalAlignment="Top" Width="84"/>
     </Grid>
 </Window>
