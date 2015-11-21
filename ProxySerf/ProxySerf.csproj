@@ -87,8 +87,11 @@
     <Compile Include="Model\IDataService.cs" />
     <Compile Include="Model\IProxyServerService.cs" />
     <Compile Include="Log\LogMisc.cs" />
+    <Compile Include="Model\IProxySourceService.cs" />
     <Compile Include="Model\ProxyServerItem.cs" />
     <Compile Include="Model\ProxyServerService.cs" />
+    <Compile Include="Model\ProxySourceItem.cs" />
+    <Compile Include="Model\ProxySourceService.cs" />
     <Compile Include="Skins\LogView.xaml.cs">
       <DependentUpon>LogView.xaml</DependentUpon>
     </Compile>
