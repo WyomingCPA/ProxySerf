@@ -33,10 +33,12 @@ namespace ProxySerf.ViewModel
             if (ViewModelBase.IsInDesignModeStatic)
             {
                 SimpleIoc.Default.Register<IDataService, Design.DesignDataService>();
+                SimpleIoc.Default.Register<ILogService, Design.DesignLogService>();
             }
             else
             {
                 SimpleIoc.Default.Register<IDataService, DataService>();
+                SimpleIoc.Default.Register<ILogService, LogService>();
             }
 
             SimpleIoc.Default.Register<MainViewModel>();

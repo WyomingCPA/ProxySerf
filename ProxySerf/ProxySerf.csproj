@@ -81,17 +81,20 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Design\DesignDataService.cs" />
-    <Compile Include="Log\Log.cs" />
+    <Compile Include="Design\DesignLogService.cs" />
     <Compile Include="Model\DataItem.cs" />
     <Compile Include="Model\DataService.cs" />
     <Compile Include="Model\IDataService.cs" />
+    <Compile Include="Model\ILogService.cs" />
     <Compile Include="Model\IProxyServerService.cs" />
-    <Compile Include="Log\LogMisc.cs" />
     <Compile Include="Model\IProxySourceService.cs" />
+    <Compile Include="Model\LogItem.cs" />
+    <Compile Include="Model\LogService.cs" />
     <Compile Include="Model\ProxyServerItem.cs" />
     <Compile Include="Model\ProxyServerService.cs" />
     <Compile Include="Model\ProxySourceItem.cs" />
     <Compile Include="Model\ProxySourceService.cs" />
+    <Compile Include="ProxyClass\ProxySourceScraper.cs" />
     <Compile Include="Skins\LogView.xaml.cs">
       <DependentUpon>LogView.xaml</DependentUpon>
     </Compile>

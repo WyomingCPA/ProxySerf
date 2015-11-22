@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProxySerf.Model
+namespace ProxySerf.ProxyClass
 {
-    class ProxyServerService
+    class ProxySourceScraper
     {
+
+
 
     }
 }

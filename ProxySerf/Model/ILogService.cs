@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProxySerf.Model
 {
-    class ProxyServerService
+  
+    public interface ILogService
     {
-
+        void GetData(Action<List<LogItem>, Exception> callback);
     }
 }

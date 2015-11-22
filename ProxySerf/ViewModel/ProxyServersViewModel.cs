@@ -1,4 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Messaging;
+using System.Windows;
 
 namespace ProxySerf.ViewModel
 {
@@ -10,11 +12,19 @@ namespace ProxySerf.ViewModel
     /// </summary>
     public class ProxyServersViewModel : ViewModelBase
     {
+
         /// <summary>
         /// Initializes a new instance of the ProxyServersViewModel class.
         /// </summary>
         public ProxyServersViewModel()
         {
+
+            Messenger.Default.Register<string>(this, HandleRegistrationInfo);
+        }
+
+        private void HandleRegistrationInfo(string info)
+        {
+            MessageBox.Show(info);
         }
     }
 }
