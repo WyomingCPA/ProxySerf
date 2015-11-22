@@ -18,10 +18,6 @@ namespace ProxySerf.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        private readonly IDataService _dataService;
-
-
-
 
         public ICommand Start { get; private set; }
 
@@ -29,19 +25,8 @@ namespace ProxySerf.ViewModel
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
-        public MainViewModel(IDataService dataService)
+        public MainViewModel()
         {
-            _dataService = dataService;
-            _dataService.GetData(
-                (item, error) =>
-                {
-                    if (error != null)
-                    {
-                        // Report error here
-                        return;
-                    }
-                    
-                });
 
             Start = new RelayCommand(() => StartExecute(), () => true);
         }

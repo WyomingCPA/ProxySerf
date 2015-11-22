@@ -80,11 +80,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Design\DesignDataService.cs" />
     <Compile Include="Design\DesignLogService.cs" />
-    <Compile Include="Model\DataItem.cs" />
-    <Compile Include="Model\DataService.cs" />
-    <Compile Include="Model\IDataService.cs" />
     <Compile Include="Model\ILogService.cs" />
     <Compile Include="Model\IProxyServerService.cs" />
     <Compile Include="Model\IProxySourceService.cs" />
